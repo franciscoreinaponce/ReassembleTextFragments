@@ -14,7 +14,7 @@ public class FranciscoReinaPonce {
 
 	public static void main(String[] args) throws IOException {
 
-		try (BufferedReader in = new BufferedReader(new FileReader("E:/input.txt"))) {
+		try (BufferedReader in = new BufferedReader(new FileReader(args[0]))) {
 			in.lines().map(FranciscoReinaPonce::reassemble).forEach(System.out::println);
 		}
 
